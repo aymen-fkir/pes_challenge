@@ -50,3 +50,15 @@ tr:hover {
     background-color: #ffffff;
     box-shadow: #dddada;
 }
+.signout-button {
+    background-color: #3678f4; /* Red background color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.signout-button:hover{
+    background-color: #17459b;
+}
