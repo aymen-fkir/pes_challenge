@@ -1,0 +1,55 @@
+/* General form styling */
+form {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+/* Styling for form inputs */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Styling for labels */
+.form-label {
+  margin-left: 5px;
+}
+
+/* Styling for the checkbox */
+.form-check-input {
+  margin-right: 5px;
+}
+
+/* Styling for links */
+a {
+  color: #007bff;
+  text-align: right;
+  display: block;
+}
+
+/* Styling for the button */
+.btn {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Centering the form and its components in the middle of the screen */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* This will take up at least the full height of the viewport */
+}

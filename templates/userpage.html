@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Example</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='userpage.css')}}"
+    />
+</head>
+<body>
+    <div class="container">
+        <!-- Placeholder for an image -->
+        <img class="profile-img rounded-circle" src="https://cdn.pixabay.com/photo/2013/07/18/20/26/sea-164989_640.jpg" alt="User Image Placeholder">
+
+        <!-- Display 4 numbers horizontally -->
+        <div class="numbers">
+            <table>
+                <tr>
+                    <td class="number">House ID</td>
+                    <td class="number">Cost</td>
+                    <td class="number">Consumption</td>
+                    <td class="number">Pollution</td>
+                </tr>
+                <tr>
+                    <td><span id="number0">300</span></td>
+                    <td><span id="number1">{{profile.cost}} $</span></td>
+                    <td><span id="number2">{{profile.energy_consumtion}} W</span></td>
+                    <td><span id="number3">{{profile.polution}} %</span></td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <!-- User profile information (you can add more details) -->
+        <div class="user">
+            <h2>{{profile.username}}</h2>
+        </div>
+        <button class="signout-button" onclick="location.href='{{ url_for('signout') }}'" type="button">
+            Sign Out
+        </button>
+    </div>
+</body>
+</html>

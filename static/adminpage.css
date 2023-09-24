@@ -1,0 +1,52 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5EDF1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-left: 60px;
+    margin-bottom: 600px;
+
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border-width: 5cm;
+    border: 1px solid #0c245843;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 300px;
+    margin-left: -100px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #eaeaea;
+    font-weight: bold;
+    border-bottom: 1px solid #eaeaea;
+}
+
+tr:hover {
+    background-color: #ffffff;
+    box-shadow: #dddada;
+}

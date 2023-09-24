@@ -1,0 +1,74 @@
+/* General form styling */
+form {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  /* Styling for form inputs */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for labels */
+  .form-label {
+    font-size: 14px; /* This sets the font size */
+    color: #000000; /* This sets the text color */
+    font-weight: bold;
+    align-self: flex-start; /* This will align the label to the start (left) of the flex container */
+  }
+  
+  /* Styling for links */
+  a {
+    color: #007bff;
+  }
+  
+  /* Styling for the button */
+  .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Centering the form and its components in the middle of the screen */
+  body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh; /* This will take up at least the full height of the viewport */
+    padding-left: 10%; 
+  }
+  
+  /* Position and size the image */
+  .img-fluid {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    max-width: 50%; /* Adjust this value to change the size of the image */
+  }
+  
+  /* Set the rest of the page to white */
+  body {
+      background-color: white;
+  }
+  p {
+    font-size: 40px; /* This sets the font size */
+    line-height: 2; /* This sets the space between lines */
+    color: #000000; /* This sets the text color */
+    margin-bottom: 10px; /* This sets the space below each paragraph */
+    font-weight: bold;
+    text-align: center;
+  }
+  
