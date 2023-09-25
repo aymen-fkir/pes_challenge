@@ -62,6 +62,25 @@
                             </label>
                           </div>
                         </div>
+                        <script>
+                          // Get references to the password and verification password input fields
+                          const passwordInput = document.getElementById("password");
+                          const verPasswordInput = document.getElementById("ver_password");
+                        
+                          // Get reference to the form
+                          const form = document.querySelector("form");
+                        
+                          // Function to handle form submission
+                          form.addEventListener("submit", function (event) {
+                            // Check if the passwords match
+                            if (passwordInput.value !== verPasswordInput.value) {
+                              // Prevent the form from submitting
+                              event.preventDefault();
+                              // Display an error message
+                              alert("Passwords do not match. Please check your password.");
+                            }
+                          });
+                        </script>
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                           <button type="submit" class="btn btn-primary btn-lg" >Register</button>
                         </div>

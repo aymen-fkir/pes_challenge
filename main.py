@@ -49,6 +49,7 @@ def signout():
 @app.route("/signin",methods=["POST"])
 def signin():
     data = request.form
+    
     re = check_admin(data)
     if re == 401:
         result = fetch_db(data)
@@ -74,12 +75,12 @@ def signup():
 @app.route("/create_account",methods=['POST'])
 def create_account():
     form = request.form
-    data = {"username":form.get("username"),"email":form.get("email"),"password":form.get("password"),"energy_consumtion":0,"cost":0,"polution":0}
-    code = insert_to_db(data)
-    if code == 200:
-        return app.redirect("/")
-    else:
-        return app.redirect("/signup")
+    if form["ver_password"] == form["password"]:
+        data = {"username":form.get("username"),"email":form.get("email"),"password":form.get("password"),"energy_consumtion":0,"cost":0,"polution":0,"region":"east cost"}
+        code = insert_to_db(data)
+        if code == 200:
+            return app.redirect("/")
+    return app.redirect("/signup")
 
 @app.route("/profile/<username>")
 def userinerface(username):
