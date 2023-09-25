@@ -64,7 +64,7 @@ def admin(region,username):
     client = MongoClient(host="localhost",port=27017)
     db = client["Energy"]
     collection = db["users"]
-    user_data = collection.find()
+    user_data = collection.find({"region":region})
     return render_template("adminpage.html",user_data=user_data)
 
 @app.route("/signup")
