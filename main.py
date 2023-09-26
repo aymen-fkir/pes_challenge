@@ -37,29 +37,31 @@ def fetch_db(data):
     
 
 app = Flask(__name__)
-
+# main route
 @app.route("/")
 def home():
     return render_template("front_page.html")
 
+#for signout
 @app.route('/signout')
 def signout():
     return app.redirect(app.url_for('home'))
 
+#for signin
 @app.route("/signin",methods=["POST"])
 def signin():
-    data = request.form
+    data = {"username":request.form["username"],"password":request.form["password"]}
     
     re = check_admin(data)
     if re == 401:
         result = fetch_db(data)
         if result == 401:
-            return app.redirect("/")
-        else:
-            return app.redirect(f"/profile/{result['username']}")
-    else:
-        return app.redirect(f"/admin/{re['region']}/{re['username']}")
+            return app.redirect(f"/")
+        
+        return app.redirect(f"/profile/{result['username']}")
+    return app.redirect(f"/admin/{re['region']}/{data}")
 
+#for adminrout
 @app.route("/admin/<region>/<username>")
 def admin(region,username):
     client = MongoClient(host="localhost",port=27017)
@@ -68,10 +70,12 @@ def admin(region,username):
     user_data = collection.find({"region":region})
     return render_template("adminpage.html",user_data=user_data)
 
+#for signup
 @app.route("/signup")
 def signup():
     return render_template("signup.html")
 
+#for creating account
 @app.route("/create_account",methods=['POST'])
 def create_account():
     form = request.form
@@ -82,6 +86,7 @@ def create_account():
             return app.redirect("/")
     return app.redirect("/signup")
 
+# for user page
 @app.route("/profile/<username>")
 def userinerface(username):
     profile = fetch_db({"username":username})
