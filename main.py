@@ -40,7 +40,7 @@ app = Flask(__name__)
 # main route
 @app.route("/")
 def home():
-    return render_template("front_page.html")
+    return render_template("index.html")
 
 #for signout
 @app.route('/signout')
