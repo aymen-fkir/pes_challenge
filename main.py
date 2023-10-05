@@ -4,9 +4,6 @@ from pymongo import MongoClient
 import hashlib
 
 
-
-
-
 def fetch_by_username(username):
     client = MongoClient(host="localhost",port=27017)
     db = client["Energy"]
