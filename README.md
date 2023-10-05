@@ -47,46 +47,8 @@ accurcy (70%)
 
 ## Key Features
 
-- List the primary features and capabilities of the AI model.
-- Provide a brief description of each feature.
+- predict energy demand and energy production based on the weather and also equpment failer using sensors to detect failers before they accure 
 
 ## Technologies Used
 
-- Describe the technology stack used for developing and running the AI model.
-- Include programming languages, libraries, and frameworks.
-
-## Usage Instructions
-
-Provide clear instructions on how to use the AI model. Include examples or code snippets if applicable.
-
-## Performance Metrics
-
-If available, share performance metrics or evaluation results of the AI model.
-
-## Deployment
-
-Explain how to deploy or integrate the AI model into other applications or systems.
-
-## Maintenance and Support
-
-Describe how maintenance and support will be provided for the AI model.
-
-## License
-
-Specify the license under which the AI model is released (e.g., MIT License, Apache License).
-
-## Contact Information
-
-Provide contact information for inquiries or support related to the AI model.
-
-## Acknowledgments
-
-If applicable, acknowledge contributors or sources of data used in the model.
-
-## Additional Notes
-
-Include any other relevant information, such as future development plans or known issues.
-
----
-
-Feel free to modify and expand upon this template to fit your AI model's specific details and requirements. Once you have your README.md file ready, you can create a new GitHub repository, add this README file to it, and enable GitHub Pages as mentioned in the previous response to publish your specifications on a GitHub page.
+- ML models **Sklearn**
