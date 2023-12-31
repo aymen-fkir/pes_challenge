@@ -39,12 +39,7 @@ This README provides an overview of the specifications for our website project. 
 
 ## Purpose
 
-1. **Predictive maintenance : ** Predictive maintenance is a technique used to detect equipment failures before they occur. AI can be used to analyze data from sensors to detect patterns that indicate an upcoming failure. This allows for repairs to be made before the equipment breaks down, which can help improve energy efficiency by avoiding unexpected downtime.
-accurcy (70%)
-
-2. **energy_production_detection : ** The energy_production_detection AI model utilizes a limited dataset of 2000 lines to identify energy production events with an accuracy of 60%. Its primary objective is to assist in energy management and optimization by recognizing these events in real-world datasets. While the model demonstrates promising results, further improvements may be achieved with additional data and fine-tuning
-3. **building_41 : ** This AI model predicts a building's energy demand by analyzing weather conditions and temperature data. By considering these factors, it provides accurate forecasts to help optimize energy usage and improve efficiency, contributing to sustainable and cost-effective building management.  
-
+1. **energy_production_detection : ** The energy_production_detection AI model utilizes a limited dataset of 2000 lines to identify energy production events with an accuracy of 60%. Its primary objective is to assist in energy management and optimization by recognizing these events in real-world datasets. While the model demonstrates promising results, further improvements may be achieved with additional data and fine-tuning
 ## Key Features
 
 - predict energy demand and energy production based on the weather and also equpment failer using sensors to detect failers before they accure 
